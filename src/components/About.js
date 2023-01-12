@@ -1,10 +1,12 @@
+import React from 'react';
 
-
-const About = ({image = "https://via.placeholder.com/215", about }) => {
+const About = ({ image , about }) => {
     return ( 
        <div>
-         <img src={image} alt="blog logo" />
-        <p>{about}</p>
+        <aside>
+         <img src={image? image: "https://via.placeholder.com/215"} alt="blog logo" />
+         <p>{about}</p>
+         </aside>
        </div>
      );
 }
